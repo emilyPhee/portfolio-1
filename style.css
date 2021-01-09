@@ -1,0 +1,183 @@
+/* font-family: 'Roboto', sans-serif;
+
+font-family: 'Roboto Mono', monospace; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@keyframes typing-animation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 57rem;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    border-right-color: #C9B0CF;
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 
+  what we want is 10px, so divide default px (16px) to 10 
+  10/16 = 0.625 
+  .625*16 = 10
+  we are converting this to percent because each user may have different font size as a default
+  so that we want to provide the right font size according to user's default value (px)
+  */
+  font-size: 62.5%;
+}
+
+body {
+  color: #333;
+}
+
+.header-logo {
+  width: 18rem;
+  margin: 1.2rem 0 0 1.2rem;
+}
+
+.main-header {
+  height: 100vh;
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-component {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Main banner (welcome greeting) */
+#banner-hello {
+  font-size: 3.5rem;
+  font-family: 'Roboto Mono', monospace;
+}
+
+#banner-intro {
+  font-size: 5rem;
+  font-weight: 300;
+  font-family: 'Roboto Mono', monospace;
+  margin-top: 4rem;
+
+  /* Typing animation */
+  border-right: solid 3px #C9B0CF;
+  white-space: nowrap;
+  overflow: hidden;
+  /* animation */
+  animation: typing-animation 4s steps(29, end) 1s 1 normal both,
+  typing-cursor 1s steps(29, end) infinite;
+
+
+}
+
+/* Icons */
+.main-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+}
+
+.main-icons > * {
+  margin: 0 4.2rem;
+  color: #C9B0CF;
+}
+
+
+/* Scroll */
+.scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 9rem;
+}
+
+.scroll > * {
+  margin: 1.2rem 0 1.2rem 0;
+}
+
+.scroll p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  color: rgb(87, 87, 87);
+  letter-spacing: .2rem;
+}
+
+/* About */
+.about-section {
+  height: 100vh;
+}
+
+.about-content {
+  background-color: rgb(242, 242, 255);
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  padding: 6rem 4rem;
+}
+
+.introduce-component {
+  display: flex;
+  align-items: center;
+
+  /* Modify the size of introduction */
+  width: 90rem
+}
+.introduce-component img {
+  width: 26rem;
+  height: 35rem;
+  margin-right: 3rem;
+}
+
+.intro-and-btn {
+  padding: 4rem;
+}
+
+.intro p {
+  font-size: 1.8rem;
+  font-family: 'Roboto', sans-serif;
+  line-height: 3.2rem;
+}
+.intro-and-btn .resume-btn {
+  text-decoration: none;
+  color: #3F3F3F;
+  letter-spacing: .1rem;
+  font-family: 'Roboto Mono', monospace;
+
+  border: 2px solid #C9B0CF;
+  padding: .9rem 4rem;
+  font-size: 1.2rem;
+  border-radius: .3rem;
+}
+
+.intro-and-btn .resume-btn:hover {
+  background-color: #C9B0CF;
+}
+
+.resume-btn-div {
+  margin-top: 7rem;
+}
+
