@@ -110,11 +110,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 9rem;
+  padding-top: 7rem;
 }
 
 .scroll .box {
   margin-top: 4rem;
+
 }
 .scroll > * {
   margin: 1.2rem 0 1.2rem 0;
@@ -165,9 +166,9 @@ body {
 }
 
 /* About */
-/* .about-section {
+.about-section {
   height: 100vh;
-} */
+}
 
 .about-content-flex-container {
   width: 100%;
@@ -190,8 +191,10 @@ body {
 
 .about-content-flex-container .about-title {
   font-family: 'Roboto Mono', monospace;
-  font-size: 2rem;
-  margin: 0 79rem 5rem 0;
+  font-size: 1.5rem;
+  margin: 0 79rem 1rem 0;
+  color: #3F3F3F;
+  border-bottom: 3px solid #C9B0CF;
 }
 
 .introduce-component {
@@ -207,8 +210,8 @@ body {
   margin-right: 3rem;
 }
 
-.intro-first-part {
-  font-size: 2.3rem;
+.intro .intro-first-part {
+  font-size: 2.2rem;
   line-height: 3.5rem;
 }
 
@@ -243,6 +246,20 @@ body {
 }
 
 
+/* Projects button */
+#projects-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  height: 20rem;
+}
+.project-btn-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+}
 
 
 
@@ -259,13 +276,15 @@ body {
     }
   }
   
+  .header-logo {
+    width: 14rem;
+  }
   #banner-hello {
     font-size: 2rem;
     font-family: 'Roboto Mono', monospace;
   }
   
   #banner-intro {
-    
     font-size: 3rem;
     font-weight: 300;
     font-family: 'Roboto Mono', monospace;
@@ -283,6 +302,36 @@ body {
     height: 1rem;
     border-bottom: .1rem solid rgb(174, 174, 174);
     border-right: .1rem solid rgb(174, 174, 174);
+  }
+
+  /* Introduce */
+  .introduce-component {
+    flex-direction: column;
+  }
+
+  .introduce-component img {
+    width: 20rem;
+    height: 25rem;
+  }
+
+  .intro-and-btn {
+    display: flex;
+    flex-direction: column;
+  }
+  .intro {
+    width: 35rem;
+  }
+  .intro .intro-first-part {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .intro .intro-second-part {
+    font-size: 1.4rem;
+    line-height: 3rem;
+  }
+
+  .resume-btn-div {
+    margin-top: 3rem;
   }
 
 

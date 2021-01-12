@@ -1,0 +1,46 @@
+/* Contact */
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10rem;
+  padding-bottom: 3rem;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;  
+  text-align: center;
+}
+
+.contact-container > * {
+  margin-bottom: 1.7rem;
+  
+}
+.contact-container i {
+  color: #C9B0CF;
+}
+
+.contact-container p {
+  font-size: 1.7rem;
+  color: #717171;
+  letter-spacing: .2rem;
+}
+
+/* Footer */
+.footer {
+  background: #C9B0CF;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 1.7rem;
+}
+
+.footer .footer-container {
+  color: #fff;
+  font-family: 'Roboto Mono', monospace;
+  letter-spacing: .1rem;
+  font-size: 1.2rem;
+
+}
