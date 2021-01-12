@@ -22,6 +22,7 @@ font-family: 'Roboto Mono', monospace; */
   }
 }
 
+
 * {
   margin: 0;
   padding: 0;
@@ -75,7 +76,8 @@ body {
   font-family: 'Roboto Mono', monospace;
 }
 
-#banner-intro {
+#banner-intro,
+.project-welcome-greeting {
   font-size: 5rem;
   font-weight: 300;
   font-family: 'Roboto Mono', monospace;
@@ -261,6 +263,26 @@ body {
 
 }
 
+
+/* PROJECTS PAGE */
+.project-header {
+  height: 45vh;
+}
+.hader-flex-container {
+  display: flex;
+  justify-content: center;
+}
+.project-welcome-greeting {
+  font-size: 3rem;
+  /* Typing animation */
+  border-right: solid 3px #C9B0CF;
+  white-space: nowrap;
+  overflow: hidden;
+  /* animation */
+  animation: typing-animation 4s steps(29, end) 1s 1 normal both,
+  typing-cursor 1s steps(29, end) infinite;
+
+}
 
 
 /* Mobile */
