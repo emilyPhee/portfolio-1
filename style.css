@@ -113,7 +113,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 18rem;
+  padding-top: 7rem;
 }
 
 .scroll .box {
@@ -194,7 +194,7 @@ body {
 
 .about-content-flex-container .about-title {
   font-family: 'Roboto Mono', monospace;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: 0 79rem 1rem 0;
   color: #3F3F3F;
   border-bottom: 3px solid #C9B0CF;
@@ -214,7 +214,7 @@ body {
 }
 
 .intro .intro-first-part {
-  font-size: 2.2rem;
+  font-size: 2rem;
   line-height: 3.5rem;
 }
 
@@ -266,8 +266,9 @@ body {
 
 
 /* PROJECTS PAGE */
+
 .project-header {
-  height: 45vh;
+  min-height: 40vh;
 }
 .hader-flex-container {
   display: flex;
@@ -282,8 +283,90 @@ body {
   /* animation */
   animation: typing-animation 4s steps(29, end) 1s 1 normal both,
   typing-cursor 1s steps(29, end) infinite;
+}
+
+
+.projects-section {
+  margin-top: 1rem;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 18rem;
+}
+
+.projects-container > * {
+  margin-bottom: 5rem;
+}
+
+.project-item {
+  display: flex;
+  width: 90rem;
+}
+.project-item .project-description {
+  padding: 2rem;
+  color: #3F3F3F;
+
 
 }
+.project-title-container {
+  display: flex;
+  align-items: center;
+  padding: 1.7rem;
+}
+.project {
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: .1rem;
+  margin-left: 14rem;
+}
+.project-description p {
+  font-size: 1.7rem;
+  line-height: 3rem;
+  
+}
+.project-title-container .project-title {
+  font-size: 2rem;
+  letter-spacing: .1rem;
+  margin-right: 1rem;
+
+
+}
+.project-title-container i {
+  color: #C7D3D4;
+}
+.project-item > * {
+  padding: 3rem;
+}
+.project-item img {
+  width: 30rem;
+  height: 23rem;
+}
+
+.project-item .languages-used {
+  display: flex;
+  padding-top: 4rem;
+  justify-content: flex-start;
+
+}
+
+.project-item .languages-used > * {
+  border: .2rem solid #C7D3D4;
+  padding: 1rem 3.5rem;
+  border-radius: 2rem;
+  margin-right: 3rem;
+  font-size: 1rem
+}
+
+.project-item .languages-used > *:hover {
+  background-color: #C7D3D4;
+  color: #fff;
+  cursor: pointer;
+}
+
 
 
 /* Mobile */
