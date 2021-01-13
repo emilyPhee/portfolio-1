@@ -17,7 +17,7 @@
   margin-bottom: 1.7rem;
   
 }
-.contact-container i {
+.contact-container span {
   color: #C9B0CF;
 }
 
@@ -43,4 +43,11 @@
   letter-spacing: .1rem;
   font-size: 1.2rem;
 
+}
+
+/* anything smaller than 768px */
+@media(max-width: 768px) {
+  .contact-container p {
+    font-size: 1.5rem;
+  }
 }
