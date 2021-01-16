@@ -272,6 +272,7 @@ body {
 
 button.projects-btn {
   /* font-weight: 600; */
+  color: #717171;
   letter-spacing: .2rem;
   text-transform: uppercase;
   padding: 1.25rem 2rem;
@@ -362,7 +363,7 @@ button.projects-btn:active::before {
   width: 90rem;
 }
 .project-item .project-description {
-  padding: 2rem;
+  padding: 1rem;
   color: #3F3F3F;
 
 
@@ -396,9 +397,11 @@ button.projects-btn:active::before {
 .project-item > * {
   padding: 3rem;
 }
+
+/* project image witdh and height */
 .project-item img {
   width: 30rem;
-  height: 23rem;
+  height: 20rem;
 }
 
 .project-item .languages-used {
